@@ -9,11 +9,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var viewColour: UIView!
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet weak var redValue: UILabel!
+    @IBOutlet weak var greenValue: UILabel!
+    @IBOutlet weak var blueValue: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
 
+    @IBAction func redSliderAction() {
+        redValue.text = String(redSlider.value)
+    }
+    
+    @IBAction func greenSliderAction() {
+        greenValue.text = String(greenSlider.value)
+    }
+    
+    @IBAction func blueSliderAction() {
+        blueValue.text = String(blueSlider.value)
+    }
 }
 
