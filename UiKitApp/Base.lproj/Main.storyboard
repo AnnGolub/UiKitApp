@@ -29,13 +29,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Green:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksa-az-l8s">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksa-az-l8s">
                                         <rect key="frame" x="0.0" y="66.5" width="51" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Blue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgs-56-FzR">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgs-56-FzR">
                                         <rect key="frame" x="0.0" y="133" width="51" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -70,24 +70,23 @@
                                 <rect key="frame" x="146" y="231" width="254" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                 <connections>
-                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="nBm-bW-r2I"/>
-                                    <action selector="slidersAction" destination="BYZ-38-t0r" eventType="valueChanged" id="q8y-aK-3V8"/>
-                                    <action selector="slidersAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="N4R-oe-MSU"/>
+                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="xAC-FI-Anh"/>
+                                    <action selector="slidersAction" destination="BYZ-38-t0r" eventType="valueChanged" id="hag-56-5El"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2hB-35-v5K">
                                 <rect key="frame" x="146" y="297.5" width="254" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                 <connections>
-                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="KSI-iG-AYk"/>
-                                    <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="dgw-aj-bYC"/>
-                                    <action selector="slidersAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="DHT-ol-iW7"/>
+                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="u2G-vI-CJx"/>
+                                    <action selector="slidersAction" destination="BYZ-38-t0r" eventType="valueChanged" id="kdo-Ni-v5F"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tEG-Gx-inp">
                                 <rect key="frame" x="146" y="362.5" width="254" height="31.5"/>
                                 <connections>
-                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="pXj-ij-KBr"/>
+                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="1Y1-q7-XUO"/>
+                                    <action selector="slidersAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Zwu-Rj-l8d"/>
                                 </connections>
                             </slider>
                         </subviews>
@@ -96,13 +95,15 @@
                         <constraints>
                             <constraint firstItem="ViJ-1L-nS9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1Y9-r3-Bpj"/>
                             <constraint firstItem="09b-CW-gRw" firstAttribute="height" secondItem="ViJ-1L-nS9" secondAttribute="height" multiplier="1.09286" id="8AY-A4-qU9"/>
+                            <constraint firstItem="Wef-iz-rY8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="148" id="9L0-v5-7p2"/>
                             <constraint firstItem="tEG-Gx-inp" firstAttribute="height" secondItem="2hB-35-v5K" secondAttribute="height" id="BKF-yv-cZV"/>
                             <constraint firstItem="KPp-on-A3Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ba4-9a-t01"/>
                             <constraint firstItem="KPp-on-A3Y" firstAttribute="height" secondItem="ViJ-1L-nS9" secondAttribute="height" multiplier="1.09286" id="EGa-Bu-TBm"/>
-                            <constraint firstItem="tEG-Gx-inp" firstAttribute="leading" secondItem="09b-CW-gRw" secondAttribute="trailing" constant="28" id="I6F-xE-OrC"/>
                             <constraint firstItem="2hB-35-v5K" firstAttribute="top" secondItem="Wef-iz-rY8" secondAttribute="bottom" constant="36.5" id="LOG-An-HwB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ViJ-1L-nS9" secondAttribute="trailing" constant="16" id="MRT-XK-v4N"/>
+                            <constraint firstItem="2hB-35-v5K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="148" id="Mvz-ww-ZV8"/>
                             <constraint firstItem="2hB-35-v5K" firstAttribute="height" secondItem="Wef-iz-rY8" secondAttribute="height" id="dUy-65-TK9"/>
+                            <constraint firstItem="tEG-Gx-inp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="148" id="eL2-t5-lke"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2hB-35-v5K" secondAttribute="trailing" constant="16" id="iz9-D1-2KI"/>
                             <constraint firstItem="tEG-Gx-inp" firstAttribute="top" secondItem="2hB-35-v5K" secondAttribute="bottom" constant="35" id="pPb-9u-EUu"/>
                             <constraint firstItem="Wef-iz-rY8" firstAttribute="height" secondItem="ViJ-1L-nS9" secondAttribute="height" multiplier="0.214286" id="rO6-o1-g3Z"/>
@@ -110,18 +111,15 @@
                             <constraint firstItem="ViJ-1L-nS9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="t3I-sz-aRg"/>
                             <constraint firstItem="09b-CW-gRw" firstAttribute="top" secondItem="ViJ-1L-nS9" secondAttribute="bottom" constant="29" id="uds-jB-gxg"/>
                             <constraint firstItem="09b-CW-gRw" firstAttribute="leading" secondItem="KPp-on-A3Y" secondAttribute="trailing" constant="29" id="vcE-Zx-oZI"/>
-                            <constraint firstItem="Wef-iz-rY8" firstAttribute="leading" secondItem="09b-CW-gRw" secondAttribute="trailing" constant="28" id="vcy-Aj-qlD"/>
-                            <constraint firstItem="2hB-35-v5K" firstAttribute="leading" secondItem="09b-CW-gRw" secondAttribute="trailing" constant="28" id="wdE-3S-Ruv"/>
                             <constraint firstItem="Wef-iz-rY8" firstAttribute="top" secondItem="ViJ-1L-nS9" secondAttribute="bottom" constant="24.5" id="wrj-Fz-dlX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tEG-Gx-inp" secondAttribute="trailing" constant="16" id="xt0-nj-vFM"/>
                             <constraint firstItem="KPp-on-A3Y" firstAttribute="top" secondItem="ViJ-1L-nS9" secondAttribute="bottom" constant="27" id="zIf-YQ-Z3R"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueSlider" destination="tEG-Gx-inp" id="gR9-kP-PHR"/>
-                        <outlet property="blueValue" destination="SCh-Z1-NZE" id="dBM-Id-wH1"/>
-                        <outlet property="colourValue" destination="09b-CW-gRw" id="BWg-OK-TNF"/>
-                        <outlet property="greenSlider" destination="2hB-35-v5K" id="TX7-Er-KAF"/>
+                        <outlet property="blueSlider" destination="tEG-Gx-inp" id="0yZ-CV-COc"/>
+                        <outlet property="blueValue" destination="SCh-Z1-NZE" id="dWs-sX-I58"/>
+                        <outlet property="greenSlider" destination="2hB-35-v5K" id="sYk-nU-S9h"/>
                         <outlet property="greenValue" destination="1hs-iB-rEk" id="7VD-hu-l4k"/>
                         <outlet property="redSlider" destination="Wef-iz-rY8" id="rOJ-mj-8Wd"/>
                         <outlet property="redValue" destination="oWB-6g-Trb" id="gux-JX-Pxy"/>
