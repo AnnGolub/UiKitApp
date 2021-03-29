@@ -10,9 +10,11 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var viewColour: UIView!
+    
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
+    
     @IBOutlet weak var redValue: UILabel!
     @IBOutlet weak var greenValue: UILabel!
     @IBOutlet weak var blueValue: UILabel!
@@ -20,6 +22,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewColour.layer.cornerRadius = 16
+        redValue.text = String(redSlider.value)
+        greenValue.text = String(greenSlider.value)
+        blueValue.text = String(blueSlider.value)
     }
     
     @IBAction func redSliderAction() {
